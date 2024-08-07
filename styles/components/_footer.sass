@@ -1,0 +1,15 @@
+@import ../abstract/_variaveis.scss
+
+@mixin bg-cores($cores...)
+    background: linear-gradient(to left, $cores)
+
+footer
+    border-top: 2px solid $cor-primaria
+    text-align: center
+    font-size: $tamanho-fonte / 2
+    padding: 1.2rem
+    margin-top: 1rem
+    @include bg-cores($cor-primaria, $cor-secundaria, $cor-terciaria, $cor-primaria)
+    i
+        color: red
+
